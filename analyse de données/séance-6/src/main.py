@@ -9,7 +9,7 @@ import math
 
 #Fonction pour ouvrir les fichiers
 def ouvrirUnFichier(nom):
-    with open(nom, "r") as fichier:
+    with open(nom, "r", encoding="utf-8") as fichier:
         contenu = pd.read_csv(fichier)
     return contenu
 
